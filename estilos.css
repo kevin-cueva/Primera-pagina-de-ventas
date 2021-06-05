@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+ul{
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row; /*acomoda todo de manera horizontal*/
+    justify-content: center; /*Organia la lisha hacia el centro*/
+    text-align: center; /*Organia la lisha hacia el centro*/
+    padding-top: 5px;
+    
+}
+
+ li{
+   
+    padding-right: 20px;
+    list-style: none; /*Elimina el punto negro de la lista*/
+    font-size:1em; /*Tamaño*/
+}
+a{
+    text-decoration: none; /*quita subrayado*/
+    color: #222;
+   
+}
+a:hover{
+    color:tomato;
+}
+/*NAV1*/
+.nav1{
+    height: 30px;
+    background-color:#e6e6e6;
+    
+}
+
+li .texto-lista1{
+    font-weight:bold; /*Letra en negritA*/
+}
+/*FIN DEL NAV1*/
+
+/*BUSCADOR*/
+.container {
+   padding:0px 70px 0px 70px; 
+   height: 200px;
+   display: flex;
+   flex-direction: row;
+   align-content: flex-start;
+
+}
+.container div{
+    margin-right: 100px; /*Dañe espacio entre elemento*/
+}
+.container .buscador1{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center; /*Centramos este es el necesario*/
+    justify-content: center; 
+
+}
+.container #buscador1_id{
+    width: 500px;
+    height: 40px;
+    background-color: #e6e6e6;
+    border-radius:8px; /*coloca borde al buscador*/
+    border: 1px solid #273746;  /*Agrega grosor, solido y color al borde*/
+    background-image:url(IMAGENES/iconfinder_1814075_find_magnifier_magnifying\ glass_search_icon.svg); /*Imagen*/
+    background-repeat:no-repeat; /*No repita la imagen*/
+    background-position: right; /*Acomoda el logo hacia la izquierda*/
+}
+.container #buscador1_id:hover{ /*Cuando pasa el cursos se expande*/
+    height: 45px;
+}
+
+#buscador1_id::placeholder{
+    color:#273746;
+    font-size:1.2em;
+
+}
+/*FIN DEL BUSCADOR*/
+
+/*NAV2*/
+.nav2{
+    height: 33px;
+    margin: 0px 70px 0px 70px;
+}
+ header div h4{
+    padding-right: 40px;
+    color: black; 
+}
+header div h4 span{
+    color:tomato;
+}
+header div h4:hover{
+    color: tomato;
+    font-size: 1.05em;
+}
+/*MUJER*/
+header div ul #cuadro-mujer{
+    position: absolute;
+    height: 200px;
+    width: 1000px;
+    display: none;/*Desaparece el cuadro*/
+}
+#mujer:hover>#cuadro-mujer{
+    display:block; /*Aparece el cuadro*/
+    display: flex;
+    flex-direction: row;
+    
+}
+#cuadro-mujer div ul{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+#cuadro-mujer div ul>li{
+    padding: 0px 0px 10px 5px;
+    text-align: left;/*Como se alinia el texto*/
+}
+#cuadro-mujer>div{
+    width: 200px;
+    height: 200px;  
+    padding-right: 20px;
+    
+}
+#cuadro-mujer ul{
+    padding-top: 20px;
+}
+
+
+

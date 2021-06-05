@@ -1,0 +1,15 @@
+	CON ESTO COLOCAMOS UNA LISTA DE MANERA HORIZONTAL TAMBIEN
+
+
+ul {
+  list-style-type: none;
+  text-align: center
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+placeholder: este atributo coloca un mensaje dentro del input
+
