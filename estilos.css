@@ -96,37 +96,44 @@ header div h4:hover{
     color: tomato;
     font-size: 1.05em;
 }
-/*MUJER*/
-header div ul #cuadro-mujer{
+
+/*CUADRO GENERAL QUE SE DESPLIEGA*/
+header div ul #cuadro-general{
     position: absolute;
-    height: 200px;
+    height: auto;
     width: 1000px;
+   
     display: none;/*Desaparece el cuadro*/
 }
-#mujer:hover>#cuadro-mujer{
+#mujer:hover>#cuadro-general,
+#hombre:hover>#cuadro-general,
+#infantil:hover>#cuadro-general{
     display:block; /*Aparece el cuadro*/
     display: flex;
     flex-direction: row;
+    left: 100px;
     
 }
-#cuadro-mujer div ul{
+
+#cuadro-general ul{ /*baja mas el menu desplegable*/
+    padding-top: 20px;
+}
+#cuadro-general div ul{
     display: flex;
     flex-direction: column;
     align-content: flex-start;
 }
-#cuadro-mujer div ul>li{
+#cuadro-general div ul>li{
     padding: 0px 0px 10px 5px;
     text-align: left;/*Como se alinia el texto*/
 }
-#cuadro-mujer>div{
+#cuadro-general>div{
     width: 200px;
     height: 200px;  
     padding-right: 20px;
     
 }
-#cuadro-mujer ul{
-    padding-top: 20px;
-}
+
 
 
 
