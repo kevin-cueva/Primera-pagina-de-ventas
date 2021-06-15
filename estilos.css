@@ -10,7 +10,6 @@ ul{
     justify-content: center; /*Organia la lisha hacia el centro*/
     text-align: center; /*Organia la lisha hacia el centro*/
     padding-top: 5px;
-    
 }
 
  li{
@@ -24,11 +23,12 @@ a{
     color: #222;
    
 }
-a:hover{
+a:hover{ 
     color:tomato;
 }
+/*INICIO DEL HEADER1 PERTENECIENTE AL BUSCADOR PRINCIPAL*/
 /*NAV1*/
-.nav1{
+.nav1{ 
     height: 30px;
     background-color:#e6e6e6;
     
@@ -40,7 +40,7 @@ li .texto-lista1{
 /*FIN DEL NAV1*/
 
 /*BUSCADOR*/
-.container {
+.container { 
    padding:0px 70px 0px 70px; 
    height: 200px;
    display: flex;
@@ -49,7 +49,7 @@ li .texto-lista1{
 
 }
 .container div{
-    margin-right: 100px; /*Dañe espacio entre elemento*/
+    margin-right: 100px; /*Dale espacio entre elemento*/
 }
 .container .buscador1{
     width: auto;
@@ -59,12 +59,13 @@ li .texto-lista1{
     justify-content: center; 
 
 }
-.container #buscador1_id{
+.container #buscador1_id,
+#buscador2_id{
     width: 500px;
     height: 40px;
     background-color: #e6e6e6;
     border-radius:8px; /*coloca borde al buscador*/
-    border: 1px solid #273746;  /*Agrega grosor, solido y color al borde*/
+    border: 1px solid #e6e6e6;  /*Agrega grosor, solido y color al borde*/
     background-image:url(IMAGENES/iconfinder_1814075_find_magnifier_magnifying\ glass_search_icon.svg); /*Imagen*/
     background-repeat:no-repeat; /*No repita la imagen*/
     background-position: right; /*Acomoda el logo hacia la izquierda*/
@@ -73,46 +74,67 @@ li .texto-lista1{
     height: 45px;
 }
 
-#buscador1_id::placeholder{
+#buscador1_id::placeholder,
+#buscador2_id::placeholder{ /*Para cambiar el color de las letras del buscador*/
     color:#273746;
     font-size:1.2em;
-
 }
 /*FIN DEL BUSCADOR*/
-
+p{
+    padding-top: 30px;
+}
 /*NAV2*/
 .nav2{
-    height: 33px;
-    margin: 0px 70px 0px 70px;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+    padding-bottom:0px;
+    background-color: white;
 }
- header div h4{
-    padding-right: 40px;
+#header2 .nav2{
+    height: 40px;
+    padding-bottom:20px;
+    padding-top: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    box-shadow: rgb(150,150,150) 1px 0px 10px; /*Agregar sombra*/
+}
+ #header1 div h4,
+ #header2 div h4{
+    padding-right: 30px;
     color: black; 
 }
-header div h4 span{
+#header1 div h4 span,
+#header2 div h4 span{
     color:tomato;
 }
-header div h4:hover{
+#header1 div h4:hover,
+#header2 div h4:hover{
     color: tomato;
-    font-size: 1.05em;
+    font-size: 1.03em;
 }
 
 /*CUADRO GENERAL QUE SE DESPLIEGA*/
-header div ul #cuadro-general{
-    position: absolute;
+#header1 div ul #cuadro-general,
+#header2 div ul #cuadro-general{
+    position: absolute; /*Se coloca encima de todos*/
     height: auto;
-    width: 1000px;
-   
+    width: 1000px; 
     display: none;/*Desaparece el cuadro*/
+    background-color: white;
+    padding-left: 50px;
 }
+/*APARECE EL CUADRO GENERAL*/
 #mujer:hover>#cuadro-general,
 #hombre:hover>#cuadro-general,
-#infantil:hover>#cuadro-general{
+#infantil:hover>#cuadro-general,
+#deportivo:hover>#cuadro-general,
+#calzado:hover>#cuadro-general,
+#accesorios:hover>#cuadro-general{
     display:block; /*Aparece el cuadro*/
     display: flex;
     flex-direction: row;
-    left: 100px;
-    
+    left: 100px;    
 }
 
 #cuadro-general ul{ /*baja mas el menu desplegable*/
@@ -128,10 +150,36 @@ header div ul #cuadro-general{
     text-align: left;/*Como se alinia el texto*/
 }
 #cuadro-general>div{
-    width: 200px;
-    height: 200px;  
+    width: 250px; /* ancho de los div que estan en el cuadro general*/
+    min-height: 200px;
+    height: auto;  /*Largo que estan en los div del cuadro general*/
     padding-right: 20px;
     
+}
+/*SE DESAPARECE EL HEADER2*/
+#header2{
+    display: none;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#header2 h4{
+    font-size: 14px;
+    padding-right: 20px;
+    padding-top: 10px;
+
+}
+#buscador2_id{
+    width: 200px;
+    height: 40px;
+    margin: 0px 30px 0px 30px;
+}
+.container #buscador2_id:hover{
+
+}
+#header2 div ul #cuadro-general{
+    margin-top: 15px;
 }
 
 

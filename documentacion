@@ -11,5 +11,40 @@ li {
   margin-right: 10px;
 }
 
-placeholder: este atributo coloca un mensaje dentro del input
+///// placeholder: ///////
+este atributo coloca un mensaje dentro del input
+
+////////   CABECERA FIJA   ///////////
+el elemento que es fijo se debe aplicar lo siguiente
+
+position: fixed; //posicion fija pero es como si quedara encima de lo demas como una capa superior
+//Genera la posicion
+left: 0; 
+top: 0;
+//
+
+///////77/////////////////////
+overflow: hidden; // para que el madin incluya todo
+
+///////// VER CUANTO EL SCROLL DEL LA VENTANA ES DESPALZADO   ///
+window.onscroll: es el encargado de llamar la funcion cada que se mueva
+
+    window.onscroll = function (){
+        // Obtenemos la posicion del scroll en pantall
+        var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+        console.log(scroll);
+        // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
+        if(scroll > 300 && scroll < 400){
+            console.log("Pasaste la posicion 300 del scroll" + scroll);
+            
+        }
+    }
+
+//  Desaparecer algo  //
+  display: none;
+//Muestra el cuadro//
+display:block;
+
+//Agregar sombra a los div //
+  box-shadow: rgb(150,150,150) 1px 0px 10px; /*Agregar sombra*/
 
